@@ -1,0 +1,49 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 1px dotted red;
+    font-family: sans-serif;
+}
+
+.bggray {
+    background-color: rgb(179, 179, 179);
+}
+
+.bglgray {
+    background-color: rgb(204, 204, 204);
+}
+
+.bgyellow {
+    background-color: rgb(255, 255, 154);
+}
+
+@media only screen and (max-width:480px) {
+    .phone {
+        width: 100%;
+    }
+    .tablet,
+    .desktop {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:481px) {
+    .tablet {
+        width: 100%;
+    }
+    .phone,
+    .desktop {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .desktop {
+        width: 100%;
+        display: block;
+    }
+    .phone,
+    .tablet {
+        display: none;
+    }
+}
